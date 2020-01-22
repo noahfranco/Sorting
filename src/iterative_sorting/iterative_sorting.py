@@ -21,6 +21,10 @@ print(selection_sort([1, 2, 3, 5, 4, 6, 8, 7, 9, 10]))
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
+    for i in range(len(arr)-1, 0, -1):
+        for sorting in range(0, i):
+            if arr[sorting] > arr[sorting+1]:
+                arr[sorting], arr[sorting+1] = arr[sorting+1], arr[sorting]
 
     return arr
 
